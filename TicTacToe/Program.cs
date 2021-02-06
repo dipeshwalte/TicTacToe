@@ -12,6 +12,8 @@ namespace TicTacToe
             game.ChooseLetter();
             Console.WriteLine("Player chose : "+game.playerCharacter);
             Console.WriteLine("Computer chose : "+game.computerCharacter);
+            game.MakeMoveOnBoard();
+            game.DisplayBoard();
         }
     }
 }

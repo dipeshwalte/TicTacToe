@@ -49,5 +49,20 @@ namespace TicTacToe
                 Console.WriteLine("Choose Proper Character");
             }
         }
+        public void MakeMoveOnBoard()
+        {
+            Console.WriteLine("Choose between position 1 to 9: ");
+            int positon = Convert.ToInt32(Console.ReadLine());
+            if (gameBoard[positon] == 'X' || gameBoard[positon] == 'O')
+            {
+                Console.WriteLine("Position is already marked");
+            }
+            else
+            {
+                gameBoard[positon] = playerCharacter;
+            }
+
+        }
+
     }
 }
