@@ -14,7 +14,7 @@ namespace TicTacToe
             gameBoard = new char[10];
             for (int i = 1; i < 10; i++)
             {
-                gameBoard[i] = '-';
+                gameBoard[i] = i.ToString()[0];
             }
         }
         public void DisplayBoard()
